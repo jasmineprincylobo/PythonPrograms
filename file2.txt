@@ -1,0 +1,14 @@
+# Python Program to print all the numbers present in a text file
+
+fname = input("Enter file name: ")
+#let=input("Enter letter to be searched:")
+k = 0
+with open(fname, 'r') as f:
+    for line in f:
+        words = line.split()
+        for i in words:
+            for j in i:
+             if(j.isdigit):
+                print(j)
+#print("Occurrences of the characters:")
+#print(k)
